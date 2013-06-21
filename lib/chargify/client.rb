@@ -5,10 +5,10 @@ module Chargify
   class Parser < HTTParty::Parser
     def parse
       begin
-        if body.blank? return {}
+         return {} if(body.blank?)
         JSON::parse(body) || {}
       rescue => e
-        raise UnexpectedResponseError, "Crack could not parse JSON. It said: #{e.message}. Chargify's raw response: #{body}"
+        raise UnexpectedResponseError, "Could not parse JSON. It said: #{e.message}. Chargify's raw response: #{body}"
       end
     end
   end
