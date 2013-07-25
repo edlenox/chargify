@@ -5,7 +5,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = %q{chargify}
-  s.version = 0.3.0
+  s.version = "0.3.0"
   s.authors = ["Wynn Netherland", "Nash Kabbara"]
   s.email = %q{wynn.netherland@gmail.com}
   s.homepage = %q{http://github.com/pengwynn/chargify}
